@@ -1,6 +1,9 @@
 Usage
 =====
 
+Helpful commands with botCopyTrade.
+
+
 .. _installation:
 
 Binance Futures
@@ -25,7 +28,7 @@ Binance Futures
 
    /fop <cust_name> <coin_name>
 
-``Check Position:
+``Check`` Position:
 
 .. code-block:: console
 
@@ -43,7 +46,7 @@ Binance Futures
 
    /fco <cust_name or group_number> <coin_name>
    
-``CLOSE`` your positions:
+``CLOSE`` your Positions:
 
 .. code-block:: console
 
@@ -92,7 +95,7 @@ Binance Spot
 
    /sco <cust_name or group_number> <coin_name>
    
-``SELL`` your COIN:
+``SELL`` your Coin:
 
 .. code-block:: console
 
@@ -109,3 +112,6 @@ Binance Spot
 .. code-block:: console
 
    /scpc <type> <value>
+
+
+👀 If you have any bugs or questions on how to use it, have a look at my group (https://t.me/+U6w16xyWcSAUD7Y9/), or head to @Cuongitl.
