@@ -3,32 +3,109 @@ Usage
 
 .. _installation:
 
-Installation
+Binance Futures
 ------------
 
-To use Lumache, first install it using pip:
+
+``Check`` your info in the CopyTrade system:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   /fcopy <cust_name>
+   
+``Check`` Balance:
 
-Creating recipes
+.. code-block:: console
+
+   /fbl <cust_name> 
+
+``Check`` Open Orders:
+
+.. code-block:: console
+
+   /fop <cust_name> <coin_name>
+
+``Check Position:
+
+.. code-block:: console
+
+   /fps <cust_name> <coin_name>
+
+``Check`` Profit And Loss (report):
+
+.. code-block:: console
+
+   /fpnl <cust_name>
+   
+``CANCEL`` Open Orders:
+
+.. code-block:: console
+
+   /fco <cust_name or group_number> <coin_name>
+   
+``CLOSE`` your positions:
+
+.. code-block:: console
+
+   /fclose <cust_name or group_number> <coin_name>
+   
+``UPDATE`` your capital per trade order:
+
+.. code-block:: console
+
+   /fcpc <type> <value>
+
+
+Binance Spot
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
 
-.. autofunction:: lumache.get_random_ingredients
+``Check`` your info in the CopyTrade system:
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+.. code-block:: console
 
-.. autoexception:: lumache.InvalidKindError
+   /scopy <cust_name>
+   
+``Check`` Balance:
 
-For example:
+.. code-block:: console
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+   /sbl <cust_name> 
 
+``Check`` Open Orders:
+
+.. code-block:: console
+
+   /sop <cust_name> <coin_name>
+
+
+``Check`` Profit And Loss (report):
+
+.. code-block:: console
+
+   /spnl <cust_name>
+   
+
+``CANCEL`` Open Orders:
+
+.. code-block:: console
+
+   /sco <cust_name or group_number> <coin_name>
+   
+``SELL`` your COIN:
+
+.. code-block:: console
+
+   /sclose <cust_name or group_number> <coin_name>
+
+``CASH OUT ALL COINS TO USDT``:
+
+.. code-block:: console
+
+   /sliq <cust_name or group_number>
+   
+``UPDATE`` your capital per trade order:
+
+.. code-block:: console
+
+   /scpc <type> <value>
