@@ -1,7 +1,7 @@
-Usage
+Usage.Telegram Bot
 =====
 
-Helpful commands with botCopyTrade.
+Helpful commands for:
 
 
 .. _installation:
