@@ -114,4 +114,6 @@ Binance Spot
    /scpc <type> <value>
 
 
-👀 If you have any bugs or questions on how to use it, have a look at my group (https://t.me/+U6w16xyWcSAUD7Y9/), or head to @Cuongitl.
+👀 If you have any bugs or questions on how to use it, have a look at `Gambling X-Group <https://t.me/+U6w16xyWcSAUD7Y9/>`_, or head to  `@Cuongitl <https://t.me/Cuongitl/>`_
+
+
