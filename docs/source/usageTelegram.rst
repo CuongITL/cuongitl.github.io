@@ -15,6 +15,7 @@ Binance Futures
 .. code-block:: console
 
    /fcopy <cust_name>
+   /fcopy <slaves>
    
 ``Check`` Balance:
 
@@ -58,7 +59,20 @@ Binance Futures
 
    /fcpc <type> <value>
 
+``Add`` new customer for your group:
 
+.. code-block:: console
+
+    /addslave <owner_name> <api_key> <api_secret>
+   
+
+``Active`` new customer for your group:
+
+.. code-block:: console
+
+     /cpactive <cust_name> <txtId>
+    
+    
 Binance Spot
 ----------------
 
