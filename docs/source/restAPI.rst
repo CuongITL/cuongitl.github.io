@@ -6,15 +6,6 @@ Helpful Endpoints for:
 
 .. _installation:
 
-Login/Register
-------------
-
-
-.. code-block:: console
-
-   POST /apiBom/register
-   POST /apiBom/login
-   
    
 Binance Futures
 ------------
@@ -26,6 +17,13 @@ Binance Futures
 
    GET /apiBom/ft/master/<cust_name>
    GET /apiBom/ft/slave/<cust_name>
+
+``Check`` Balance Started when begin CopyTrade:
+
+.. code-block:: console
+
+   GET /apiBom/ft/balancestart/<cust_name>
+   
 
 ``Check`` Profit And Loss (report):
 
@@ -75,6 +73,12 @@ Binance Spot
    GET /apiBom/spot/master/<cust_name>
    GET /apiBom/spot/slave/<cust_name>
 
+``Check`` Balance Started when begin CopyTrade:
+
+.. code-block:: console
+
+   GET /apiBom/spot/balancestart/<cust_name>
+   
 ``Check`` Profit And Loss (report):
 
 .. code-block:: console
@@ -100,7 +104,14 @@ Binance Spot
 
    is under active development.
    
-``CLOSE`` your Positions:
+``SELL`` your Coin:
+
+.. code-block:: console
+
+   is under active development.
+   
+   
+``CASH OUT ALL COINS TO USDT``:
 
 .. code-block:: console
 
