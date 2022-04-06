@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'CopyTradeCrypto'
+project = 'SmartMoney'
 copyright = '2020, Cuongitl'
 author = 'Cuongitl'
 
