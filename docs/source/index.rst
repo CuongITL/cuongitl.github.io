@@ -1,5 +1,8 @@
-Welcome to CopyTrade's documentation!
+Welcome to Smart Money's Crypto Investing!
 ===================================
+
+Investing Made Easy With Copy Trading - Your way to success.
+
 
 **🦅 Safety first, then profit will come.🍀**
 
