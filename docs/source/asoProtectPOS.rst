@@ -1,9 +1,11 @@
-💥Automated System Operations (ASO)
+asoProtectPOS
 
-AutoTrade Protect your Positions with fee 2$/day
 =====
 
-Features:
+
+💥Automated System Operations (ASO)
+
+AutoTrade Protect your Positions with fee 2$/day, features:
 ------------
 
 - Auto Take-profit your postion when MarkPrice hit ROE% by setting.
