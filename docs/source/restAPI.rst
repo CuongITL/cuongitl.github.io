@@ -123,14 +123,15 @@ Binance Spot
 
    is under active development.
 
-API status
+API status/logs
 ----------------
 
-``Check`` API's CopyTrade:
+``Check`` API's status || Logs:
 
 .. code-block:: console
 
-   GET /apiBom/status/<cust_name>
-
+   GET /apiBom/status/ft/<cust_name>
+   GET /apiBom/status/spot/<cust_name>
+   GET /apiBom/logs/<cust_name>
 
 👀 If you have any bugs or questions on how to use it, have a look at `Gambling X-Group <https://t.me/+U6w16xyWcSAUD7Y9/>`_, or head to  `@Cuongitl <https://t.me/Cuongitl/>`_
