@@ -6,7 +6,28 @@ Helpful Endpoints for:
 
 .. _installation:
 
+General
+------------
+
+``Check`` Balance Started when begin CopyTrade:
+
+.. code-block:: console
+
+   GET /apiBom/balancestart/<cust_name>
    
+
+``Check`` Profit And Loss (report):
+
+.. code-block:: console
+
+   GET /apiBom/reportpnl/<cust_name>
+
+
+``Check`` Transfer/Deposit/Withdrawal:
+
+.. code-block:: console
+
+   GET /apiBom/transactionhistory/<cust_name>
 Binance Futures
 ------------
 
@@ -18,18 +39,7 @@ Binance Futures
    GET /apiBom/ft/master/<cust_name>
    GET /apiBom/ft/slave/<cust_name>
 
-``Check`` Balance Started when begin CopyTrade:
 
-.. code-block:: console
-
-   GET /apiBom/ft/balancestart/<cust_name>
-   
-
-``Check`` Profit And Loss (report):
-
-.. code-block:: console
-
-   GET /apiBom/ft/pnl/<cust_name>
    
 ``Check`` your info in the CopyTrade system:
 
@@ -42,6 +52,7 @@ Binance Futures
 .. code-block:: console
 
    GET /apiBom/ft/balance/<cust_name>
+   GET /fapi/v2/balance (HMAC SHA256)  *From Binance API: Futures Account Balance V2 (USER_DATA)
 
   
 ``CANCEL`` Open Orders:
@@ -73,17 +84,6 @@ Binance Spot
    GET /apiBom/spot/master/<cust_name>
    GET /apiBom/spot/slave/<cust_name>
 
-``Check`` Balance Started when begin CopyTrade:
-
-.. code-block:: console
-
-   GET /apiBom/spot/balancestart/<cust_name>
-   
-``Check`` Profit And Loss (report):
-
-.. code-block:: console
-
-   GET /apiBom/spot/pnl/<cust_name>
    
 ``Check`` your info in the CopyTrade system:
 
@@ -96,6 +96,7 @@ Binance Spot
 .. code-block:: console
 
    is under active development.
+   OR: GET /api/v3/account (HMAC SHA256)  *From Binance Spot/Margin/Savings/Mining's API: Account Information (USER_DATA)
 
   
 ``CANCEL`` Open Orders:
