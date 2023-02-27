@@ -1,7 +1,7 @@
-Welcome to SafeGuard's Crypto Bot!
+SafeGuard
 ===============
 
-✨ SafeGuard - Bot ự động đặt sl/tp theo % cài đặt sẵn, hoặc DCA lệnh theo %(nếu cho phép)
+✨ SafeGuard's Crypto Bot! - Bot tự động đặt sl/tp theo % cài đặt sẵn, hoặc DCA lệnh theo %(nếu cho phép)
 
 
 **🦅 Safety first, then profit will come.🍀**
