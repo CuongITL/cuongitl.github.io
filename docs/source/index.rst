@@ -1,4 +1,4 @@
-Welcome to Smart Money's Crypto Investing!
+SafeGuard
 ===================================
 
 BOT tự động cài đặt sl, cài đặt tp, dời sl dương BE+
