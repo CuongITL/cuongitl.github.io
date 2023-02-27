@@ -13,3 +13,8 @@ Contents
 
 .. toctree::
    safeguard
+
+Contact
+--------
+
+* Telegram: `https://t.me/Cuongitl`_
