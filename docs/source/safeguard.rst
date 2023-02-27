@@ -10,7 +10,7 @@ SafeGuard
 
  `1. equity_protect(%):` khi tổng toàn bộ lệnh bị âm vượt thông số này thì bot sẽ đóng hết lệnh.
 
- `2. Break-Event:` khi lệnh dượng, bot tự động dời stoploss về entry+%
+ `2. Break-Event:` khi lệnh dương, bot tự động dời stoploss về entry+%
  - be_trigger(%): mặc định=1.2
  - be_protect(%): mặc định=0.5
 
