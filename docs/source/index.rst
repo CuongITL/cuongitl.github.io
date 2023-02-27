@@ -1,23 +1,15 @@
 Welcome to Smart Money's Crypto Investing!
 ===================================
 
-Investing Made Easy With Copy Trading - Your way to success.
+BOT tự động cài đặt sl, cài đặt tp, dời sl dương BE+
 
 
 **🦅 Safety first, then profit will come.🍀**
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
 
-.. note::
-
-   This documentation is under active development.
 
 Contents
 --------
 
 .. toctree::
-   overview
-   usageTelegram
-   restAPI
-   asoProtectPOS
+   safeguard
