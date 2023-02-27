@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'SmartMoney'
-copyright = '2020, Cuongitl'
+copyright = '2023, Cuongitl'
 author = 'Cuongitl'
 
 release = '0.1'
