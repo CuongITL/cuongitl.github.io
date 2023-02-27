@@ -10,18 +10,18 @@ SafeGuard
 
  `1. equity_protect(%):` khi tổng toàn bộ lệnh bị âm vượt thông số này thì bot sẽ đóng hết lệnh.
 
- 2. Break-Event: khi lệnh dượng, bot tự động dời stoploss về entry+%
+ `2. Break-Event:` khi lệnh dượng, bot tự động dời stoploss về entry+%
  - be_trigger(%): mặc định=1.2
  - be_protect(%): mặc định=0.5
 
- 3. Stop-Loss(%):
+ `3. Stop-Loss(%):`
   - sl_percent: Mặc định = 35%
   - sl_by: percent hoặc margin, mặc định='margin' Thông số này quyết định bot sẽ cài sl theo % giá cố định hoặc % của vốn lệnh hiện tại.
 
- 4. Take-Profit(%):
+ `4. Take-Profit(%):`
   - tp_percent: Mặc định = 5%
 
- 5. dca_percent(%): Mặc định = 0 - KHÔNG CHO PHÉP DCA.
+` 5. dca_percent(%):` Mặc định = 0 - KHÔNG CHO PHÉP DCA.
  - multi: mặc định=1.5. Thông số này quyết định DCA có gấp thếp vốn không?
  - max_dca_per_day: mặc định=2. Số lần DCA trong 1 ngày.
  - minutes_between_dca: mặc định=59. Thời gian tối thiểu(theo phút) giữa 2 lần DCA.
@@ -29,7 +29,7 @@ SafeGuard
 
   Khi Margin của 1 lệnh(vị thế) LỚN HƠN HOẶC BẰNG max_margin thì bot sẽ không nhồi lệnh (DCA) cho vị thế lện đó nữa.
 
- 6. symbols_skip: bot sẽ bỏ qua các coin trong danh sách này.
+ `6. symbols_skip:` bot sẽ bỏ qua các coin trong danh sách này.
 ===============
 Bên trên là các thông số cơ bản, ngoài ra còn một số thông số khác nhằm hạn chế rủi ro, không cho phép chỉnh.
 
@@ -41,7 +41,7 @@ Bên trên là các thông số cơ bản, ngoài ra còn một số thông số
  
 
 Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn thay đổi thì hãy chat với bot Telegram: 
-`@Cuongitl <https://t.me/Cuongitl_bot >`_
+`<https://t.me/Cuongitl_bot >`_
 
 
 `XEM`
