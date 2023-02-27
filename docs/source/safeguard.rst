@@ -21,7 +21,7 @@ SafeGuard
  `4. Take-Profit(%):`
   - tp_percent: Mặc định = 5%
 
-` 5. dca_percent(%):` Mặc định = 0 - KHÔNG CHO PHÉP DCA.
+ `5. dca_percent(%):` Mặc định = 0 - KHÔNG CHO PHÉP DCA.
  - multi: mặc định=1.5. Thông số này quyết định DCA có gấp thếp vốn không?
  - max_dca_per_day: mặc định=2. Số lần DCA trong 1 ngày.
  - minutes_between_dca: mặc định=59. Thời gian tối thiểu(theo phút) giữa 2 lần DCA.
