@@ -17,4 +17,4 @@ Contents
 Contact
 --------
 
-* Telegram: `https://t.me/Cuongitl`_
+* Telegram: https://t.me/Cuongitl
