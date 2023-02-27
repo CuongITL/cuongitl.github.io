@@ -35,9 +35,9 @@ Bên trên là các thông số cơ bản, ngoài ra còn một số thông số
 
 👉  Nếu bạn giao dịch dưới ref của @Cuongitl sẽ được miễn phí tất cả các loại bot tín hiệu.
 
- ✨  - Sàn Bitget: https://signal.lecuong.info/s/bg
+ * Sàn Bitget: https://signal.lecuong.info/s/bg
  
- ✨  - Sàn Binance:  https://signal.lecuong.info/s/bnb
+ * Sàn Binance:  https://signal.lecuong.info/s/bnb
  
 
 Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn thay đổi thì hãy chat với bot Telegram: 
