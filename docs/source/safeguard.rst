@@ -34,7 +34,9 @@ SafeGuard
 Bên trên là các thông số cơ bản, ngoài ra còn một số thông số khác nhằm hạn chế rủi ro, không cho phép chỉnh.
 
 👉  Nếu bạn giao dịch dưới ref của @Cuongitl sẽ được miễn phí tất cả các loại bot tín hiệu.
+
  ✨  - Sàn Bitget: https://signal.lecuong.info/s/bg
+ 
  ✨  - Sàn Binance:  https://signal.lecuong.info/s/bnb
  
 
