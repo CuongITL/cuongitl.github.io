@@ -16,10 +16,10 @@ Welcome to SafeGuard's Crypto Bot!
 
  3. Stop-Loss(%):
   - sl_percent: Mặc định = 35%
-  - sl_by: percent hoặc margin. Thông số này quyết định bot sẽ cài sl theo % giá cố định hoặc % của vốn lệnh hiện tại. Mặc định='margin'
+  - sl_by: percent hoặc margin, mặc định='margin' Thông số này quyết định bot sẽ cài sl theo % giá cố định hoặc % của vốn lệnh hiện tại.
 
  4. Take-Profit(%):
-  - tp_percent: Mặc định = 35%
+  - tp_percent: Mặc định = 5%
 
  5. dca_percent(%): Mặc định = 0 - KHÔNG CHO PHÉP DCA.
  - multi: mặc định=1.5. Thông số này quyết định DCA có gấp thếp vốn không?
