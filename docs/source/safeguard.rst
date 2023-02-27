@@ -6,9 +6,9 @@ SafeGuard
 
 **🦅 Safety first, then profit will come.🍀**
 
-💥 Bot gồm có các thông số sau:
+💥 `Bot gồm có các thông số sau:`
 
- 1. equity_protect(%): khi tổng toàn bộ lệnh bị âm vượt thông số này thì bot sẽ đóng hết lệnh.
+ `1. equity_protect(%):` khi tổng toàn bộ lệnh bị âm vượt thông số này thì bot sẽ đóng hết lệnh.
 
  2. Break-Event: khi lệnh dượng, bot tự động dời stoploss về entry+%
  - be_trigger(%): mặc định=1.2
