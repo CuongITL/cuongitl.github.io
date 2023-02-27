@@ -42,8 +42,10 @@ Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn
 `@Cuongitl <https://t.me/Cuongitl_bot >`_
 
 
-`XEM` thông số Bot
+`XEM`
 -------------------
+
+Để xem thông số bảo vệ của tài khoản:
 
 .. code-block:: console
    /guard <tên-tài-khoản>
@@ -55,7 +57,7 @@ Ví dụ xem thông số bảo vệ của tài khoản tên là bitget_m1:
    /guard bitget_m1
 
 
-`THAY ĐỔI` thông số
+`THAY ĐỔI`
 -------------------
 
 Để thay đổi thông số, sử dụng cú pháp: 
