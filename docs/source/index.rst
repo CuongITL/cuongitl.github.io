@@ -12,9 +12,14 @@ Contents
 --------
 
 .. toctree::
+   started
    safeguard
 
 Contact
 --------
 
-* Telegram: https://t.me/Cuongitl
+* Telegram: |location_link|
+
+.. |location_link| raw:: html
+
+ <a href="https://t.me/Cuongitl/" target="_blank">@Cuongitl</a>
