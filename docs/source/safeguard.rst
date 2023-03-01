@@ -38,15 +38,6 @@ Bên trên là các thông số cơ bản, ngoài ra còn một số thông số
  * Sàn Bitget: https://signal.lecuong.info/s/bg
  
  * Sàn Binance:  https://signal.lecuong.info/s/bnb
- 
-
-Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn thay đổi thì hãy chat với bot 
-Telegram: |location_link|
-
-.. |location_link| raw:: html
-
- <a href="https://t.me/Cuongitl_bot" target="_blank">@Cuongitl_bot</a>
-
 
 
 `XEM`
@@ -127,3 +118,11 @@ Danh sách thông số:
 * add
 * remove
 * help
+
+ 
+Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn thay đổi thì hãy chat với bot 
+Telegram: |location_link|
+
+.. |location_link| raw:: html
+
+ <a href="https://t.me/Cuongitl_bot" target="_blank">@Cuongitl_bot</a>
