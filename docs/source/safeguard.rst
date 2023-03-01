@@ -40,8 +40,13 @@ Bên trên là các thông số cơ bản, ngoài ra còn một số thông số
  * Sàn Binance:  https://signal.lecuong.info/s/bnb
  
 
-Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn thay đổi thì hãy chat với bot Telegram: 
-`<https://t.me/Cuongitl_bot >`_
+Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn thay đổi thì hãy chat với bot 
+Telegram: |location_link|
+
+.. |location_link| raw:: html
+
+ <a href="https://t.me/Cuongitl_bot" target="_blank">@Cuongitl</a>
+
 
 
 `XEM`
