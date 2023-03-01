@@ -45,7 +45,7 @@ Telegram: |location_link|
 
 .. |location_link| raw:: html
 
- <a href="https://t.me/Cuongitl_bot" target="_blank">@Cuongitl</a>
+ <a href="https://t.me/Cuongitl_bot" target="_blank">@Cuongitl_bot</a>
 
 
 
