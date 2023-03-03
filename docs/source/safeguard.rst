@@ -25,10 +25,9 @@ SafeGuard
     Ví dụ với thông số như sau: sl_by: margin, sl_percent = 30%. Bạn vào lệnh 12$, khi lệnh bị âm -4$ (~30%) thì bot sẽ cắt lệnh này.
 
  ``4. Take-Profit(%):``
-    - tp_percent: Mặc định = 5%
+    - tp_percent: Mặc định = 10%
 
-     Bot tự đặt tp ở mức +5% entry với thông số trên.
-
+     Bot tự đặt tp ở mức entry+10%  với thông số trên.
 
  ``5. dca_percent(%):`` Mặc định = 0 - KHÔNG CHO PHÉP DCA.
     - multi: mặc định=1.5. Thông số này quyết định DCA có gấp thếp vốn không?
@@ -36,13 +35,13 @@ SafeGuard
     - minutes_between_dca: mặc định=59. Thời gian tối thiểu(theo phút) giữa 2 lần DCA.
     - max_margin($): khống chế vốn tối đa của 1 lệnh (dùng khi bật tính năng DCA). Mặc định = 50.
 
-     Khi margin của 1 lệnh(vị thế) LỚN HƠN HOẶC BẰNG max_margin thì bot sẽ không nhồi lệnh (DCA) cho vị thế lện đó nữa.
+    Khi margin của 1 lệnh(vị thế) LỚN HƠN HOẶC BẰNG max_margin thì bot sẽ không nhồi lệnh (DCA) cho vị thế lện đó nữa.
 
  ``6. symbols_skip:`` bot sẽ bỏ qua các coin trong danh sách này.
  
 Bên trên là các thông số cơ bản, ngoài ra còn một số thông số khác nhằm hạn chế rủi ro, không cho phép chỉnh.
 
-👉  Nếu bạn giao dịch dưới ref của @Cuongitl sẽ được ``MIỄN PHÍ`` tất cả các loại bot tín hiệu.
+👉  Nếu bạn ``giao dịch dưới ref`` của @Cuongitl sẽ được ``MIỄN PHÍ`` tất cả các loại bot tín hiệu.
 
  * Sàn Bitget: https://signal.lecuong.info/s/bg
  
