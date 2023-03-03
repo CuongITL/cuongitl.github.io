@@ -6,20 +6,27 @@ SafeGuard
 
 **🦅 Safety first, then profit will come.🍀**
 
-💥 `Bot gồm có các thông số sau:`
+💥 **Bot gồm có các thông số sau:**
 
- `1. equity_protect(%):` khi tổng toàn bộ lệnh bị âm vượt thông số này thì bot sẽ đóng hết lệnh.
+ ``1. equity_protect(%):`` khi tổng toàn bộ lệnh bị âm vượt thông số này thì bot sẽ đóng hết lệnh.
 
- `2. Break-Event:` khi lệnh dương, bot tự động dời stoploss về entry+%
- - be_trigger(%): mặc định=1.2
- - be_protect(%): mặc định=0.5
+ ``2. Break-Event:`` khi lệnh dương, bot tự động dời stoploss về entry+%
+ - be_trigger(%): mặc định=0.9
+ - be_protect(%): mặc định=0.4
 
- `3. Stop-Loss(%):`
-  - sl_percent: Mặc định = 35%
-  - sl_by: percent hoặc margin, mặc định='margin' Thông số này quyết định bot sẽ cài sl theo % giá cố định hoặc % của vốn lệnh hiện tại.
+với thông số trên, khi lệnh dương >= 0.9% thì bot sẽ dời sl về mức entry+0.4%
+
+ `3. Stop-Loss(%):` tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
+  - sl_percent: Mặc định = 0  - Tắt.
+  - sl_by: percent hoặc margin, mặc định='margin'. Thông số này quyết định bot sẽ tính toán sl theo % giá cố định hoặc % của vốn lệnh hiện tại.
+
+Ví dụ với thông số như sau: sl_by: margin, sl_percent = 30%. Bạn vào lệnh 12$, khi lệnh bị âm -4$ (~30%) thì bot sẽ cắt lệnh này.
 
  `4. Take-Profit(%):`
   - tp_percent: Mặc định = 5%
+
+Bot tự đặt tp ở mức +5% entry với thông số trên.
+
 
  `5. dca_percent(%):` Mặc định = 0 - KHÔNG CHO PHÉP DCA.
  - multi: mặc định=1.5. Thông số này quyết định DCA có gấp thếp vốn không?
@@ -27,7 +34,7 @@ SafeGuard
  - minutes_between_dca: mặc định=59. Thời gian tối thiểu(theo phút) giữa 2 lần DCA.
  - max_margin($): khống chế vốn tối đa của 1 lệnh (dùng khi bật tính năng DCA). Mặc định = 50.
 
-  Khi Margin của 1 lệnh(vị thế) LỚN HƠN HOẶC BẰNG max_margin thì bot sẽ không nhồi lệnh (DCA) cho vị thế lện đó nữa.
+  Khi margin của 1 lệnh(vị thế) LỚN HƠN HOẶC BẰNG max_margin thì bot sẽ không nhồi lệnh (DCA) cho vị thế lện đó nữa.
 
  `6. symbols_skip:` bot sẽ bỏ qua các coin trong danh sách này.
 ===============
@@ -74,27 +81,32 @@ Ví dụ #1: khống chế vốn nhồi lệnh tối đa khi DCA ở mức 50$
 
    /guard max_margin 50
  
-Ví dụ #2: Thay đổi stoploss(%) bằng 25
+Ví dụ #2: Thay đổi phương thức sl là margin, %sl = 25%
  
  .. code-block:: console
 
-   /guard sl_percent 25
+   /guard sl_margin 25
 
-Ví dụ #3: Thay đổi phương thức stoploss theo % vốn vào lệnh(margin), thay vì % giá so với entry.
+Ví dụ #3: Thay đổi phương thức sl là price, %sl = 2%
  
  .. code-block:: console
 
-   /guard sl_by margin
+   /guard sl_price 2
 
+Ví dụ #4: Thay đổi break-event về tỷ lệ: trigger(bẫy) = 1%, bảo vệ ở mức: 0.5%
+ 
+ .. code-block:: console
 
-Ví dụ #4: Thêm coin LUNAUSDT vào danh sách loại trừ (không cần bot bảo vệ)
+   /guard be 1 0.5
+
+Ví dụ #5: Thêm coin LUNAUSDT vào danh sách loại trừ (không cần bot bảo vệ)
  
  .. code-block:: console
 
    /guard add LUNAUSDT
 
 
-Ví dụ #5: Gỡ coin LUNAUSDT khỏi danh sách loại trừ.
+Ví dụ #6: Gỡ coin LUNAUSDT khỏi danh sách loại trừ.
  
  .. code-block:: console
 
@@ -105,11 +117,10 @@ Danh sách thông số:
 ---------------------
 
 * equity_protect
-* be_trigger,
-* be_protect
+* be
 * max_margin
-* sl_percent
-* sl_by
+* sl_price
+* sl_margin
 * tp_percent
 * dca_percent
 * multi
