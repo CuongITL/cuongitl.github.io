@@ -26,9 +26,11 @@ Vui lòng liên hệ  |location_link|
  , cung cấp API key để sử dụng Bot với phí:
  
  
-* Dùng thử: 1$/ngày
-* 03 tháng: 60$
-
+* 1$/ngày  dùng thử
+* 01 tháng: 25$
+* 03 tháng: 70$
+* 06 tháng: 130$
+* 01 năm: 249$
 
 💥 Nếu bạn ``giao dịch dưới ref`` của `@Cuongitl` sẽ được ``MIỄN PHÍ`` tất cả các loại bot tín hiệu.
 
