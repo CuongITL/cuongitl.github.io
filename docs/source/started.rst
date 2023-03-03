@@ -29,7 +29,8 @@ Vui lòng liên hệ  |location_link|
 * Dùng thử: 1$/ngày
 * 03 tháng: 60$
 
-* Nếu bạn ``giao dịch dưới ref`` của `@Cuongitl` sẽ được ``MIỄN PHÍ`` tất cả các loại bot tín hiệu.
+
+💥 Nếu bạn ``giao dịch dưới ref`` của `@Cuongitl` sẽ được ``MIỄN PHÍ`` tất cả các loại bot tín hiệu.
 
 
  
