@@ -40,7 +40,7 @@ SafeGuard
  ``6. symbols_skip:`` bot sẽ bỏ qua các coin trong danh sách này.
 
 
- * ``Lưu ý``: khi lệnh dương thì bot sẽ kiểm tra Take-Profit và Break-Event, khi lệnh âm thì bot sẽ kiểm tra Stop-Loss và DCA (nếu cho phép).
+* ``Lưu ý``: khi lệnh dương thì bot sẽ kiểm tra Take-Profit và Break-Event, khi lệnh âm thì bot sẽ kiểm tra Stop-Loss và DCA (nếu cho phép).
 
 
 Bên trên là các thông số cơ bản, ngoài ra còn một số thông số khác nhằm hạn chế rủi ro, không cho phép chỉnh.
