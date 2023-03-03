@@ -23,7 +23,7 @@ Vui lòng liên hệ  |location_link|
 .. |location_link| raw:: html
 
  <a href="https://t.me/Cuongitl/" target="_blank">@Cuongitl</a>
- , cung cấp API key để sử dụng Bot với phí chỉ từ 1$/ngày (giảm giá nếu đăng ký gói tháng).
+ , cung cấp API key để sử dụng Bot với phí dùng thử chỉ từ 1$/ngày hoặc 60$/3 tháng sử dụng.
 
 * Nếu bạn giao dịch dưới ref của `@Cuongitl` sẽ được miễn phí tất cả các loại bot tín hiệu.
 
