@@ -30,12 +30,15 @@ SafeGuard
      Bot tự đặt tp ở mức entry+10%  với thông số trên.
 
  ``5. dca_percent(%):`` Mặc định = 0 - KHÔNG CHO PHÉP DCA.
+    - max_margin($): khống chế vốn tối đa của 1 lệnh (chỉ dùng khi bật tính năng DCA). Mặc định = 50$.
     - multi: mặc định=1.5. Thông số này quyết định DCA có gấp thếp vốn không?
-    - max_dca_per_day: mặc định=2. Số lần DCA trong 1 ngày.
+    - max_dca_per_day: mặc định=2. Số lần DCA tối đa trong 1 ngày.
     - minutes_between_dca: mặc định=59. Thời gian tối thiểu(theo phút) giữa 2 lần DCA.
-    - max_margin($): khống chế vốn tối đa của 1 lệnh (dùng khi bật tính năng DCA). Mặc định = 50.
 
-    Khi margin của 1 lệnh(vị thế) LỚN HƠN HOẶC BẰNG max_margin thì bot sẽ không nhồi lệnh (DCA) cho vị thế lện đó nữa.
+    Khi margin của 1 lệnh(vị thế) LỚN HƠN HOẶC BẰNG max_margin thì bot sẽ không nhồi lệnh (DCA) cho vị thế lệnh đó nữa.
+    
+    Ví dụ: Bạn cài bot với max_margin=50$, multi=1.5. Bạn vào lệnh vốn 22$, khi lệnh bị âm thì bot sẽ nhồi với vốn 22 x1.5 = 33$ ==>
+    tổng vốn của lệnh sẽ là 5$. Nhưng mức khống chế vốn ở mức 50$ nên bot không thể nhồi lệnh!
 
  ``6. symbols_skip:`` bot sẽ bỏ qua các coin trong danh sách này.
 
