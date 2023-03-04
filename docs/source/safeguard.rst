@@ -121,8 +121,11 @@ Ví dụ #6: Gỡ coin LUNAUSDT khỏi danh sách loại trừ.
    /guard remove LUNAUSDT
 
 
-Danh sách thông số: 
+`CÁC THÔNG SỐ`
 ---------------------
+
+
+Danh sách thông số: 
 
 * equity_protect
 * be
