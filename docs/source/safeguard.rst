@@ -38,7 +38,7 @@ SafeGuard
     Khi margin của 1 lệnh(vị thế) LỚN HƠN HOẶC BẰNG max_margin thì bot sẽ không nhồi lệnh (DCA) cho vị thế lệnh đó nữa.
     
     Ví dụ: Bạn cài bot với max_margin=50$, multi=1.5. Bạn vào lệnh vốn 22$, khi lệnh bị âm thì bot sẽ nhồi với vốn 22 x1.5 = 33$ ==>
-    tổng vốn của lệnh sẽ là 5$. Nhưng mức khống chế vốn ở mức 50$ nên bot không thể nhồi lệnh!
+    tổng vốn của lệnh sẽ là 55$. Nhưng mức khống chế vốn ở mức 50$ nên bot không thể nhồi lệnh!
 
  ``6. symbols_skip:`` bot sẽ bỏ qua các coin trong danh sách này.
 
