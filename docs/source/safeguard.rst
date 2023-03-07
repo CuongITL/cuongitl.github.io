@@ -120,7 +120,12 @@ Ví dụ #6: Gỡ coin LUNAUSDT khỏi danh sách loại trừ.
 
    /guard remove LUNAUSDT
 
+Ví dụ #7: KHÔNG SỬ DỤNG danh sách loại trừ.
+ 
+ .. code-block:: console
 
+   /guard remove all
+   
 `CÁC THÔNG SỐ`
 ---------------------
 
