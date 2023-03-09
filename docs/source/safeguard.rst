@@ -18,18 +18,23 @@ SafeGuard
 
    với thông số trên, khi lệnh dương >= 0.9% thì bot sẽ dời sl về mức entry+0.4%
 
- ``3. Stop-Loss(%):`` tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
+ ``3. Trailing-Stop:`` bot sẽ tự động điều chỉnh stoploss liên tục để bám sát xu thế giảm/tăng của thị trường.
+   - TS sẽ sử dụng giá trị của ``be_protect(%)``
+
+   Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh ở một khoảng cách xác định trước.
+   
+ ``4. Stop-Loss(%):`` tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
    - sl_percent: Mặc định = 0  - Tắt.
    - sl_by: percent hoặc margin, mặc định='margin'. Thông số này quyết định bot sẽ tính toán sl theo % giá cố định hoặc % của vốn lệnh hiện tại.
 
     Ví dụ với thông số như sau: sl_by: margin, sl_percent = 30%. Bạn vào lệnh 12$, khi lệnh bị âm -4$ (~30%) thì bot sẽ cắt lệnh này.
 
- ``4. Take-Profit(%):``
+ ``5. Take-Profit(%):``
     - tp_percent: Mặc định = 10%
 
      Bot tự đặt tp ở mức entry+10%  với thông số trên.
 
- ``5. dca_percent(%):`` Mặc định = 0 - KHÔNG CHO PHÉP DCA.
+ ``6. dca_percent(%):`` Mặc định = 0 - KHÔNG CHO PHÉP DCA.
     - max_margin($): khống chế vốn tối đa của 1 lệnh (chỉ dùng khi bật tính năng DCA). Mặc định = 50$.
     - multi: mặc định=1.5. Thông số này quyết định DCA có gấp thếp vốn không?
     - max_dca_per_day: mặc định=2. Số lần DCA tối đa trong 1 ngày.
@@ -40,7 +45,7 @@ SafeGuard
     Ví dụ: Bạn cài bot với max_margin=50$, multi=1.5. Bạn vào lệnh vốn 22$, khi lệnh bị âm thì bot sẽ nhồi với vốn 22 x1.5 = 33$ ==>
     tổng vốn của lệnh sẽ là 55$. Nhưng mức khống chế vốn ở mức 50$ nên bot không thể nhồi lệnh!
 
- ``6. symbols_skip:`` bot sẽ bỏ qua các coin trong danh sách này.
+ ``7. symbols_skip:`` bot sẽ bỏ qua các coin trong danh sách này.
 
 
 * ``Lưu ý``: khi lệnh dương thì bot sẽ kiểm tra Take-Profit và Break-Event, khi lệnh âm thì bot sẽ kiểm tra Stop-Loss và DCA (nếu cho phép).
@@ -107,20 +112,35 @@ Ví dụ #4: Thay đổi break-event về tỷ lệ: trigger(bẫy) = 1%, bảo 
 
    /guard be 1 0.5
 
-Ví dụ #5: Thêm coin LUNAUSDT vào danh sách loại trừ (không cần bot bảo vệ)
+
+Ví dụ #5: BẬT chế độ Trailing-Stop
+ 
+ .. code-block:: console
+
+   /guard be 1 0.5
+   
+   
+Ví dụ #6: TẮT chế độ Trailing-Stop
+ 
+ .. code-block:: console
+
+   /guard ts 0
+   
+   
+Ví dụ #7: Thêm coin LUNAUSDT vào danh sách loại trừ (không cần bot bảo vệ)
  
  .. code-block:: console
 
    /guard add LUNAUSDT
 
 
-Ví dụ #6: Gỡ coin LUNAUSDT khỏi danh sách loại trừ.
+Ví dụ #8: Gỡ coin LUNAUSDT khỏi danh sách loại trừ.
  
  .. code-block:: console
 
    /guard remove LUNAUSDT
 
-Ví dụ #7: KHÔNG SỬ DỤNG danh sách loại trừ.
+Ví dụ #9: KHÔNG SỬ DỤNG danh sách loại trừ.
  
  .. code-block:: console
 
@@ -134,6 +154,7 @@ Danh sách thông số:
 
 * equity_protect
 * be
+* ts
 * max_margin
 * sl_price
 * sl_margin
