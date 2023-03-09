@@ -118,7 +118,7 @@ Ví dụ #5: BẬT chế độ Trailing-Stop
  
  .. code-block:: console
 
-   /guard be 1 0.5
+   /guard ts 1
    
    
 Ví dụ #6: TẮT chế độ Trailing-Stop
