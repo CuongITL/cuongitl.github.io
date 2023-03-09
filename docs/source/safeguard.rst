@@ -12,14 +12,15 @@ SafeGuard
 
  ``1. equity_protect(%):`` khi tổng toàn bộ lệnh bị âm vượt thông số này thì bot sẽ đóng hết lệnh.
 
- ``2. Break-Event:`` khi lệnh dương, bot tự động dời stoploss về entry+%
+ ``2. Break-Event(BE):`` khi lệnh dương, bot tự động dời stoploss về entry+%
    - be_trigger(%): mặc định=0.9
    - be_protect(%): mặc định=0.4
 
    với thông số trên, khi lệnh dương >= 0.9% thì bot sẽ dời sl về mức entry+0.4%
 
- ``3. Trailing-Stop:`` bot sẽ tự động điều chỉnh stoploss liên tục để bám sát xu thế giảm/tăng của thị trường.
+ ``3. Trailing-Stop(TS):`` bot sẽ tự động điều chỉnh stoploss liên tục để bám sát xu thế giảm/tăng của thị trường.
    - TS sẽ sử dụng giá trị của ``be_protect(%)``
+   - Mặc định = 0 - KHÔNG CHO PHÉP TS.
 
    Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh ở một khoảng cách xác định trước.
    
