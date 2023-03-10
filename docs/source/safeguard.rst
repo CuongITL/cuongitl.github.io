@@ -10,7 +10,9 @@ SafeGuard
 -------------------
 💥 **Bot gồm có các thông số sau:**
 
+
  ``1. equity_protect(%):`` khi tổng toàn bộ lệnh bị âm vượt thông số này thì bot sẽ đóng hết lệnh.
+
 
  ``2. Break-Event(BE):`` khi lệnh dương, bot tự động dời stoploss về entry+%
    - be_trigger(%): mặc định=0.9
@@ -18,22 +20,28 @@ SafeGuard
 
    với thông số trên, khi lệnh dương >= 0.9% thì bot sẽ dời sl về mức entry+0.4%
 
+
  ``3. Trailing-Stop(TS):`` bot sẽ tự động điều chỉnh stoploss liên tục để bám sát xu thế giảm/tăng của thị trường.
    - TS sẽ sử dụng giá trị của ``be_protect(%)``
    - Mặc định = 0 - KHÔNG CHO PHÉP TS.
 
-   Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh ở một khoảng cách xác định trước.
-   
+   Khi bật tính năng TS thì nó sẽ dùng thông số của BE và thay thế BE.
+   Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh và giữ một khoảng cách xác định trước
+    so với giá thị trường. Khoảng cách được cài đặt ở đây = ``be_protect(%)``
+
+
  ``4. Stop-Loss(%):`` tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
    - sl_percent: Mặc định = 0  - Tắt.
    - sl_by: percent hoặc margin, mặc định='margin'. Thông số này quyết định bot sẽ tính toán sl theo % giá cố định hoặc % của vốn lệnh hiện tại.
 
     Ví dụ với thông số như sau: sl_by: margin, sl_percent = 30%. Bạn vào lệnh 12$, khi lệnh bị âm -4$ (~30%) thì bot sẽ cắt lệnh này.
 
+
  ``5. Take-Profit(%):``
     - tp_percent: Mặc định = 10%
 
      Bot tự đặt tp ở mức entry+10%  với thông số trên.
+
 
  ``6. dca_percent(%):`` Mặc định = 0 - KHÔNG CHO PHÉP DCA.
     - max_margin($): khống chế vốn tối đa của 1 lệnh (chỉ dùng khi bật tính năng DCA). Mặc định = 50$.
@@ -45,6 +53,7 @@ SafeGuard
     
     Ví dụ: Bạn cài bot với max_margin=50$, multi=1.5. Bạn vào lệnh vốn 22$, khi lệnh bị âm thì bot sẽ nhồi với vốn 22 x1.5 = 33$ ==>
     tổng vốn của lệnh sẽ là 55$. Nhưng mức khống chế vốn ở mức 50$ nên bot không thể nhồi lệnh!
+
 
  ``7. symbols_skip:`` bot sẽ bỏ qua các coin trong danh sách này.
 
