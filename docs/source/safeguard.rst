@@ -66,7 +66,9 @@ Bên trên là các thông số cơ bản, ngoài ra còn một số thông số
 
 ❇️ ACE ai chưa có tài khoản giao dịch thì đăng ký link ref(*) ủng hộ mình nhé:
 
-Bitget (https://signal.lecuong.info/s/bg)| Binance (https://signal.lecuong.info/s/bnb) 
+ * Sàn Bitget: https://signal.lecuong.info/s/bg
+ 
+ * Sàn Binance:  https://signal.lecuong.info/s/bnb
 
 
 `XEM`
