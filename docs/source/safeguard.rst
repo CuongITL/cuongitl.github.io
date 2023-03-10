@@ -26,8 +26,8 @@ SafeGuard
    - Mặc định = 0 - KHÔNG CHO PHÉP TS.
 
    Khi bật tính năng TS thì nó sẽ dùng thông số của BE và thay thế BE.
-   Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh và giữ một khoảng cách xác định trước
-    so với giá thị trường. Khoảng cách được cài đặt ở đây = ``be_protect(%)``
+   
+   Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh và giữ một khoảng cách xác định trước so với giá thị trường. Khoảng cách được cài đặt ở đây = ``be_protect(%)``
 
 
  ``4. Stop-Loss(%):`` tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
