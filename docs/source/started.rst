@@ -23,16 +23,10 @@ Vui lòng liên hệ  |location_link|
 .. |location_link| raw:: html
 
  <a href="https://t.me/Cuongitl/" target="_blank">@Cuongitl</a>
- , cung cấp API key để sử dụng Bot với phí:
+ , cung cấp API key để sử dụng Bot với phí chỉ từ ``27$/tháng``
  
- 
-* 1$/ngày  dùng thử
-* 01 tháng: 25$
-* 03 tháng: 70$
-* 06 tháng: 130$
-* 01 năm: 249$
 
-💥 Nếu bạn ``giao dịch dưới ref`` của `@Cuongitl` sẽ được ``MIỄN PHÍ`` tất cả các loại bot tín hiệu.
+💥Nhận cung cấp các loại bot theo yêu cầu. 
 
 
  
