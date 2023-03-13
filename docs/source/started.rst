@@ -26,7 +26,7 @@ Vui lòng liên hệ  |location_link|
  , cung cấp API key để sử dụng Bot với phí chỉ từ:
  
  
- *   ``27$/tháng``
+*   ``27$/tháng``
  
 
 💥Nhận cung cấp các loại bot theo yêu cầu. 
