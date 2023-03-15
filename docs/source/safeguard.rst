@@ -102,7 +102,7 @@ Ví dụ xem thông số bảo vệ của tài khoản tên là bitget_m1:
 Để thay đổi thông số, sử dụng cú pháp: 
 
 
-.. code-block:: console
+ .. code-block:: console
    /guard <tên-thông-số> <giá-trị-mới>
 
 
