@@ -12,7 +12,6 @@ Contents
 --------
 
 .. toctree::
-   started
    safeguard
 
 Contact
