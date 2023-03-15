@@ -6,6 +6,7 @@ SafeGuard
 
 **🦅 Safety first, then profit will come.🍀**
 
+
 `TÍNH NĂNG`
 -------------------
 💥 **Bot gồm có các thông số sau:**
@@ -71,6 +72,7 @@ Bên trên là các thông số cơ bản, ngoài ra còn một số thông số
  * Sàn Binance:  https://signal.lecuong.info/s/bnb
 
 
+
 `XEM`
 -------------------
 
@@ -93,6 +95,7 @@ Ví dụ xem thông số bảo vệ của tài khoản tên là bitget_m1:
 
 .. code-block:: console
    /guard <tên-thông-số> <giá-trị-mới>
+
 
 
 `VÍ DỤ`
@@ -156,7 +159,9 @@ Ví dụ #9: KHÔNG SỬ DỤNG danh sách loại trừ.
  .. code-block:: console
 
    /guard remove all
-   
+
+
+
 `CÁC THÔNG SỐ`
 ---------------------
 
@@ -180,8 +185,5 @@ Danh sách thông số:
 
  
 Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn thay đổi thì hãy chat với bot 
-Telegram: |location_link|
 
-.. |location_link| raw:: html
-
- <a href="https://t.me/Cuongitl_bot" target="_blank">@Cuongitl_bot</a>
+Telegram: `@Cuongitl_bot <https://t.me/Cuongitl_bo>`_.
