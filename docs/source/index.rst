@@ -12,7 +12,7 @@ Contents
 --------
 
 .. toctree::
-   safeguard
+   started
 
 Contact
 --------
