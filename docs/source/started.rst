@@ -6,8 +6,8 @@ Tạo tài khoản
 -------------------
 Nếu bạn chưa có tài khoản, hãy đăng ký tài khoản mới theo link sau:
 
-* Sàn Bitget:  `mã giảm ``10%`` phí giao dịch <https://signal.lecuong.info/s/bg>`_.
-* Sàn Binance:  `mã giảm ``5%`` phí giao dịch <https://signal.lecuong.info/s/bnb>`_.
+* Sàn Bitget:  `mã giảm 10 % phí giao dịch <https://signal.lecuong.info/s/bg>`_.
+* Sàn Binance:  `mã giảm 5 % phí giao dịch <https://signal.lecuong.info/s/bnb>`_.
 
 Tạo API Key
 -------------------
