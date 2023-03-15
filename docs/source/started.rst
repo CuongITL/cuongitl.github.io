@@ -21,6 +21,7 @@ Tạo API Key
 Vui lòng liên hệ  |location_link|
 
 .. |location_link| raw:: html
+
  <a href="https://t.me/Cuongitl/" target="_blank">@Cuongitl</a>
  , cung cấp API key để sử dụng Bot.
  
