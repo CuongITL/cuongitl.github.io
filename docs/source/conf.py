@@ -9,6 +9,7 @@ author = 'Cuongitl'
 release = '0.1'
 version = '0.1.15'
 
+latex_engine = "xelatex"
 # -- General configuration
 
 extensions = [
