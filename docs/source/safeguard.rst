@@ -16,6 +16,7 @@ SafeGuard
 
 
  ``2. Break-Event(BE):`` khi lệnh dương, bot tự động dời stoploss về entry+%
+ 
    - be_trigger(%): mặc định=0.9
    - be_protect(%): mặc định=0.4
 
@@ -23,6 +24,7 @@ SafeGuard
 
 
  ``3. Trailing-Stop(TS):`` bot sẽ tự động điều chỉnh stoploss liên tục để bám sát xu thế giảm/tăng của thị trường.
+ 
    - TS sẽ sử dụng giá trị của ``be_protect(%)``
    - Mặc định = 0 - KHÔNG CHO PHÉP TS.
 
@@ -32,6 +34,7 @@ SafeGuard
 
 
  ``4. Stop-Loss(%):`` tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
+ 
    - sl_percent: Mặc định = 0  - Tắt.
    - sl_by: percent hoặc margin, mặc định='margin'. Thông số này quyết định bot sẽ tính toán sl theo % giá cố định hoặc % của vốn lệnh hiện tại.
 
@@ -39,12 +42,14 @@ SafeGuard
 
 
  ``5. Take-Profit(%):``
+ 
     - tp_percent: Mặc định = 10%
 
      Bot tự đặt tp ở mức entry+10%  với thông số trên.
 
 
  ``6. dca_percent(%):`` Mặc định = 0 - KHÔNG CHO PHÉP DCA.
+ 
     - max_margin($): khống chế vốn tối đa của 1 lệnh (chỉ dùng khi bật tính năng DCA). Mặc định = 50$.
     - multi: mặc định=1.5. Thông số này quyết định DCA có gấp thếp vốn không?
     - max_dca_per_day: mặc định=2. Số lần DCA tối đa trong 1 ngày.
@@ -59,10 +64,12 @@ SafeGuard
  ``7. symbols_skip:`` bot sẽ bỏ qua các coin trong danh sách này.
 
 
+
 * ``Lưu ý``: khi lệnh dương thì bot sẽ kiểm tra Take-Profit và Break-Event, khi lệnh âm thì bot sẽ kiểm tra Stop-Loss và DCA (nếu cho phép).
 
 
 Bên trên là các thông số cơ bản, ngoài ra còn một số thông số khác nhằm hạn chế rủi ro, không cho phép chỉnh.
+
 
 
 ❇️ ACE ai chưa có tài khoản giao dịch thì đăng ký link ref(*) ủng hộ mình nhé:
