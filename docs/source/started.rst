@@ -21,9 +21,6 @@ Tạo API Key
 Vui lòng liên hệ   `@Cuongitl <https://t.me/Cuongitl/>`_, cung cấp API key để sử dụng Bot.
  
  
-BOT theo yêu cầu
----------------------
-
 💥Nhận cung cấp các loại bot theo yêu cầu. 
 
 
