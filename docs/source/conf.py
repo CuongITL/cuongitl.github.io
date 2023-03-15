@@ -9,7 +9,7 @@ author = 'Cuongitl'
 release = '0.1'
 version = '0.1.15'
 
-latex_engine = "xelatex"
+latex_engine = "xelatex"  # for support Unicode
 # -- General configuration
 
 extensions = [
