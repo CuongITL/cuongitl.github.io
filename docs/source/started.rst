@@ -18,11 +18,7 @@ Tạo API Key
 Đăng ký BOT
 ---------------------
 
-Vui lòng liên hệ  |location_link|
-
-.. |location_link| raw:: html
-
- <a href="https://t.me/Cuongitl/" target="_blank">@Cuongitl</a>
+Vui lòng liên hệ   `@Cuongitl <https://t.me/Cuongitl/>`_
  , cung cấp API key để sử dụng Bot.
  
  
