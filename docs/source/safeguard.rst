@@ -1,7 +1,8 @@
 SafeGuard
 ===============
 
-✨ SafeGuard Crypto Bot! Hỗ trợ sàn:  BitGet, Binance
+✨ SafeGuard Crypto Bot! Hỗ trợ:  BitGet, Binance
+
 
 BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss dương Break-Event (BE+), Trailing-Stop theo % cài đặt sẵn, hoặc DCA lệnh theo %(nếu cho phép).
 
