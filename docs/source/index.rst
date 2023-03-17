@@ -1,7 +1,7 @@
 SafeGuard
 ===================================
 
-BOT tự động cài đặt sl, cài đặt tp, dời sl dương BE+
+BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss dương Break-Event (BE+), Trailing-Stop, DCA...
 
 
 **🦅 Safety first, then profit will come.🍀**
