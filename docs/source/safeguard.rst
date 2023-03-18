@@ -45,7 +45,7 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
 
     Ví dụ 1: sl_by = margin, sl_percent = 25%. Bạn vào lệnh 12$, khi lệnh bị âm -3$ (~ -25%) thì bot sẽ cắt lệnh này.
     
-    Ví dụ 2: sl_by = percent, sl_percent = 25%. Bạn mua ETH ở giá 1000 thì bot sẽ đặt stop-loss ở mức -30% giá, tức là stop-loss ở giá 750.
+    Ví dụ 2: sl_by = percent, sl_percent = 25%. Bạn mua ETH ở giá 1000 thì bot sẽ đặt stop-loss ở mức -25% giá, tức là stop-loss ở giá 750.
     
    ``4.2 Hard stop-loss``: bot sẽ đặt sẵn stop-loss cứng mặc định ở mức -35% giá.
    
