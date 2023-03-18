@@ -45,7 +45,9 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
 
     Ví dụ với thông số như sau: sl_by: margin, sl_percent = 30%. Bạn vào lệnh 12$, khi lệnh bị âm -4$ (~30%) thì bot sẽ cắt lệnh này.
     
-    ``Hard stop-loss``: bot sẽ đặt sẵn stop-loss cứng mặc định ở mức -35% giá.
+    
+   ``Hard stop-loss``: bot sẽ đặt sẵn stop-loss cứng mặc định ở mức -35% giá.
+   
 
  ``5. Take-Profit(%):``
  
