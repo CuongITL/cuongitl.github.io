@@ -36,13 +36,16 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
    Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh và giữ một khoảng cách xác định trước so với giá thị trường. Khoảng cách được cài đặt ở đây = ``be_protect(%)``. Lưu ý: giá thay đổi tối thiểu ``0.1%`` thì bot mới chạy TS.
 
 
- ``4. Stop-Loss(%):`` tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
- 
+ ``4. Stop-Loss(%):`` 
+   Chia làm 02 loại stop-loss:
+   
+   ``Hidden stop-loss``: bot sẽ không đặt sẵn sl, bot sẽ theo dõi và tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
    - sl_percent: Mặc định = 0  - Tắt.
    - sl_by: percent hoặc margin, mặc định='margin'. Thông số này quyết định bot sẽ tính toán sl theo % giá cố định hoặc % của vốn lệnh hiện tại.
 
     Ví dụ với thông số như sau: sl_by: margin, sl_percent = 30%. Bạn vào lệnh 12$, khi lệnh bị âm -4$ (~30%) thì bot sẽ cắt lệnh này.
-
+    
+    ``Hard stop-loss``: bot sẽ đặt sẵn stop-loss cứng mặc định ở mức -35% giá.
 
  ``5. Take-Profit(%):``
  
@@ -131,41 +134,47 @@ Ví dụ #3: Thay đổi phương thức sl là price, %sl = 2%
 
    /guard sl_price 2
 
-Ví dụ #4: Thay đổi break-event về tỷ lệ: trigger(bẫy) = 1%, bảo vệ ở mức: 0.5%
+Ví dụ #4: Thay đổi stop-loss cứng ở mức 20%
+ 
+ .. code-block:: console
+
+   /guard hard_sl 20
+   
+Ví dụ #5: Thay đổi break-event về tỷ lệ: trigger(bẫy) = 1%, bảo vệ ở mức: 0.5%
  
  .. code-block:: console
 
    /guard be 1 0.5
 
 
-Ví dụ #5: BẬT chế độ Trailing-Stop
+Ví dụ #6: BẬT chế độ Trailing-Stop
  
  .. code-block:: console
 
    /guard ts 1
    
    
-Ví dụ #6: TẮT chế độ Trailing-Stop
+Ví dụ #7: TẮT chế độ Trailing-Stop
  
  .. code-block:: console
 
    /guard ts 0
    
    
-Ví dụ #7: Thêm coin LUNAUSDT vào danh sách loại trừ (không cần bot bảo vệ)
+Ví dụ #8: Thêm coin LUNAUSDT vào danh sách loại trừ (không cần bot bảo vệ)
  
  .. code-block:: console
 
    /guard add LUNAUSDT
 
 
-Ví dụ #8: Gỡ coin LUNAUSDT khỏi danh sách loại trừ.
+Ví dụ #9: Gỡ coin LUNAUSDT khỏi danh sách loại trừ.
  
  .. code-block:: console
 
    /guard remove LUNAUSDT
 
-Ví dụ #9: KHÔNG SỬ DỤNG danh sách loại trừ.
+Ví dụ #10: KHÔNG SỬ DỤNG danh sách loại trừ.
  
  .. code-block:: console
 
