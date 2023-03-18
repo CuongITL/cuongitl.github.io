@@ -41,7 +41,7 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
    ``4.1 Hidden stop-loss``: bot sẽ không đặt sẵn sl. Bot sẽ theo dõi và tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
    
    - sl_by: percent hoặc margin, mặc định=margin. Thông số này quyết định bot sẽ tính toán sl theo % giá cố định hoặc theo % của vốn lệnh(margin) hiện tại.
-   - sl_percent: mức Mặc định = 0  - KHÔNG SỬ DỤNG STOP-LOSS.
+   - sl_percent: mức % stop-loss. Mặc định = 0  - KHÔNG SỬ DỤNG STOP-LOSS.
 
     Ví dụ 1: sl_by = margin, sl_percent = 25%. Bạn vào lệnh 12$, khi lệnh bị âm -3$ (~ -25%) thì bot sẽ cắt lệnh này.
     
