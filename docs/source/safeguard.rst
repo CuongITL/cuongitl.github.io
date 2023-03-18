@@ -36,19 +36,20 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
    Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh và giữ một khoảng cách xác định trước so với giá thị trường. Khoảng cách được cài đặt ở đây = ``be_protect(%)``. Lưu ý: giá thay đổi tối thiểu ``0.1%`` thì bot mới chạy TS.
 
 
- ``4. Stop-Loss(%):`` 
-   Chia làm 02 loại stop-loss:
+ ``4. Stop-Loss(%):`` Chia làm 02 cơ chế stop-loss
    
-   ``Hidden stop-loss``: bot sẽ không đặt sẵn sl, bot sẽ theo dõi và tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
+   ``4.1 Hidden stop-loss``: bot sẽ không đặt sẵn sl. Bot sẽ theo dõi và tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
    
-   - sl_percent: Mặc định = 0  - Tắt.
-   - sl_by: percent hoặc margin, mặc định='margin'. Thông số này quyết định bot sẽ tính toán sl theo % giá cố định hoặc % của vốn lệnh hiện tại.
+   - sl_by: percent hoặc margin, mặc định=margin. Thông số này quyết định bot sẽ tính toán sl theo % giá cố định hoặc theo % của vốn lệnh(margin) hiện tại.
+   - sl_percent: mức Mặc định = 0  - KHÔNG SỬ DỤNG STOP-LOSS.
 
-    Ví dụ với thông số như sau: sl_by: margin, sl_percent = 30%. Bạn vào lệnh 12$, khi lệnh bị âm -4$ (~30%) thì bot sẽ cắt lệnh này.
+    Ví dụ 1: sl_by = margin, sl_percent = 25%. Bạn vào lệnh 12$, khi lệnh bị âm -3$ (~ -25%) thì bot sẽ cắt lệnh này.
     
+    Ví dụ 2: sl_by = percent, sl_percent = 25%. Bạn mua ETH ở giá 1000 thì bot sẽ đặt stop-loss ở mức -30% giá, tức là stop-loss ở giá 750.
     
-   ``Hard stop-loss``: bot sẽ đặt sẵn stop-loss cứng mặc định ở mức -35% giá.
+   ``4.2 Hard stop-loss``: bot sẽ đặt sẵn stop-loss cứng mặc định ở mức -35% giá.
    
+    Ví dụ: Bạn mua BTC ở giá 20000 thì bot sẽ đặt stop-loss ở mức -35% giá, tức là stop-loss ở giá 13000.
 
  ``5. Take-Profit(%):``
  
