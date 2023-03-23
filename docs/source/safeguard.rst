@@ -108,7 +108,9 @@ Ví dụ xem thông số bảo vệ của tài khoản tên là bitget_m1:
 `THAY ĐỔI`
 -------------------
 
-Để thay đổi thông số, sử dụng cú pháp: 
+Để thay đổi thông số, hãy chat với bot Telegram: `@Cuongitl_bot <https://t.me/Cuongitl_bo>`_.
+
+Sử dụng cú pháp: 
 
  .. code-block:: console
  
@@ -118,6 +120,8 @@ Ví dụ xem thông số bảo vệ của tài khoản tên là bitget_m1:
 
 `VÍ DỤ`
 ---------------------
+
+Thao tác các lệnh sau với bot Telegram.
 
 
 Ví dụ #1: khống chế vốn nhồi lệnh tối đa khi DCA ở mức 50$
@@ -211,3 +215,13 @@ Danh sách thông số:
 Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn thay đổi thì hãy chat với bot 
 
 Telegram: `@Cuongitl_bot <https://t.me/Cuongitl_bo>`_.
+
+Hoặc bạn thể đăng ký tài khoản web: https://signal.lecuong.info/svc/
+Sau khi đăng nhập vào web, ở góc trên (bên phải) chỗ tên tk --> View Data
+
+* Chọn *SafeGuard Params*
+* Click vào *Get Data*, web sẽ hiển thị tất cả tk sàn sử dụng bot.
+* Click vô chữ *Update* (cột cuối cùng) của tk muốn sửa thông số.
+
+
+Chúc mọi người luôn trade có lãi.
