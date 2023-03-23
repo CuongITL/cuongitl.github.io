@@ -110,7 +110,7 @@ Ví dụ xem thông số bảo vệ của tài khoản tên là bitget_m1:
 
 Để thay đổi thông số, có 02 cách:
 
-* Sử dụng bot Telegram: `@Cuongitl_bot <https://t.me/Cuongitl_bo>`_.
+* Sử dụng bot Telegram: `@Cuongitl_bot <https://t.me/Cuongitl_bot>`_.
 
  với cú pháp như sau:
 
@@ -118,7 +118,7 @@ Ví dụ xem thông số bảo vệ của tài khoản tên là bitget_m1:
  
    /guard <tên-thông-số> <giá-trị-mới>
 
-* Sử dụng web: ` TradingSignals - Your way to success! <https://signal.lecuong.info/svc/>`_.
+* Sử dụng web: `TradingSignals - Your way to success! <https://signal.lecuong.info/svc>`_.
 
 Sau khi đăng ký và đăng nhập vào web, ở góc trên (bên phải) chỗ tên tk --> View Data
 
