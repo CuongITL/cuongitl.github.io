@@ -108,14 +108,23 @@ Ví dụ xem thông số bảo vệ của tài khoản tên là bitget_m1:
 `THAY ĐỔI`
 -------------------
 
-Để thay đổi thông số, hãy chat với bot Telegram: `@Cuongitl_bot <https://t.me/Cuongitl_bo>`_.
+Để thay đổi thông số, có 02 cách:
 
-Sử dụng cú pháp: 
+* Sử dụng bot Telegram: `@Cuongitl_bot <https://t.me/Cuongitl_bo>`_.
+
+ với cú pháp như sau:
 
  .. code-block:: console
  
    /guard <tên-thông-số> <giá-trị-mới>
 
+* Sử dụng web: ` TradingSignals - Your way to success! <https://signal.lecuong.info/svc/>`_.
+
+Sau khi đăng ký và đăng nhập vào web, ở góc trên (bên phải) chỗ tên tk --> View Data
+
+* - Chọn *SafeGuard Params*
+* - Click vào *Get Data*, web sẽ hiển thị tất cả tk sàn sử dụng bot.
+* - Click vô chữ *Update* (cột cuối cùng) của tk muốn sửa thông số.
 
 
 `VÍ DỤ`
@@ -214,14 +223,6 @@ Danh sách thông số:
  
 Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn thay đổi thì hãy chat với bot 
 
-Telegram: `@Cuongitl_bot <https://t.me/Cuongitl_bo>`_.
-
-Hoặc bạn thể đăng ký tài khoản web: https://signal.lecuong.info/svc/
-Sau khi đăng nhập vào web, ở góc trên (bên phải) chỗ tên tk --> View Data
-
-* Chọn *SafeGuard Params*
-* Click vào *Get Data*, web sẽ hiển thị tất cả tk sàn sử dụng bot.
-* Click vô chữ *Update* (cột cuối cùng) của tk muốn sửa thông số.
-
+Telegram hoặc sử dụng web.
 
 Chúc mọi người luôn trade có lãi.
