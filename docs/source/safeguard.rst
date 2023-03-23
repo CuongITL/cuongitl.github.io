@@ -203,7 +203,7 @@ Ví dụ #10: KHÔNG SỬ DỤNG danh sách loại trừ.
 ---------------------
 
 
-Danh sách thông số: 
+Danh sách thông số(*):
 
 * equity_protect
 * be
@@ -220,9 +220,10 @@ Danh sách thông số:
 * remove
 * help
 
- 
-Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn thay đổi thì hãy chat với bot 
+ (*) Bạn cần phải gõ đúng tên thì bot Telegram mới thực thi lệnh.
 
+
+Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn thay đổi thì hãy chat với bot 
 Telegram hoặc sử dụng web.
 
-Chúc mọi người luôn trade có lãi.
+**🍀 Chúc mọi người luôn trade có lãi.**
