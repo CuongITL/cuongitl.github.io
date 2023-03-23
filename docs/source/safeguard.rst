@@ -28,10 +28,11 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
 
  ``3. Trailing-Stop(TS):`` bot sẽ tự động điều chỉnh stoploss liên tục để bám sát xu thế giảm/tăng của thị trường.
  
-   - TS sẽ sử dụng giá trị của ``be_protect(%)``
+   Khi bật tính năng TS thì nó sẽ dùng thông số của BE và **TS sẽ thay thế BE.**
+
+   - TS chỉ sử dụng giá trị của ``be_protect(%)`` (không sử dụng ``be_trigger(%)``)
    - Mặc định = 0 - KHÔNG CHO PHÉP TS.
 
-   Khi bật tính năng TS thì nó sẽ dùng thông số của BE và thay thế BE.
    
    Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh và giữ một khoảng cách xác định trước so với giá thị trường. Khoảng cách được cài đặt ở đây = ``be_protect(%)``. Lưu ý: giá thay đổi tối thiểu ``0.1%`` thì bot mới chạy TS.
 
