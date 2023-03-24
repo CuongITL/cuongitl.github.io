@@ -18,24 +18,36 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
  ``1. equity_protect(%):`` khi tổng toàn bộ lệnh bị âm vượt thông số này thì bot sẽ đóng hết lệnh.
 
 
- ``2. Break-Event(BE):`` khi lệnh dương, bot tự động dời stoploss về entry+%
+ ``2. Break-Event(BE):`` khi lệnh dương, bot tự động dời stoploss về entry+% (BE+)
  
+   Thông số sử dụng:
    - be_trigger(%): mặc định=0.9
    - be_protect(%): mặc định=0.4
 
    với thông số trên, khi lệnh dương >= 0.9% thì bot sẽ dời sl về mức entry+0.4%
-
-
- ``3. Trailing-Stop(TS):`` bot sẽ tự động điều chỉnh stoploss liên tục để bám sát xu thế giảm/tăng của thị trường.
- 
-   Khi bật tính năng TS thì nó sẽ dùng thông số của BE và **TS sẽ thay thế BE.**
-
-   - TS chỉ sử dụng giá trị của ``be_protect(%)`` (không sử dụng ``be_trigger(%)``)
-   - Mặc định = 0 - KHÔNG CHO PHÉP TS.
-
    
-   Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh và giữ một khoảng cách xác định trước so với giá thị trường. Khoảng cách được cài đặt ở đây = ``be_protect(%)``. Lưu ý: giá thay đổi tối thiểu ``0.1%`` thì bot mới chạy TS.
+   BE+ hiểu nôm na là dời stop-loss dương.
 
+   Ví dụ: Bạn vào lệnh BTC ở giá 10000, khi giá tăng lên 10090, tức là lệnh dương 0.9% thì bot sẽ:
+   * Hủy stop-loss âm (nếu có)
+   * Đặt stop-loss dương ở mức bảo vệ 0.4% ở giá 10040
+
+
+ ``3. Trailing-Stop(TS):``
+ 
+   Bot sẽ tự động điều chỉnh stoploss(dương) liên tục để bám sát biến động giá thị trường theo hướng có lợi cho nhà đầu tư giúp gia tăng lợi nhuận tối đa. Vì đây là    bot bảo vệ, nên TS hoạt động theo cơ chế bảo vệ lệnh - chỉ dời stoploss dương - KHÔNG MUA/BÁN LỆNH MỚI.
+ 
+   TS chỉ hoạt động sau khi lệnh đã có BE+.
+    Thông số sử dụng:
+   - ts_rate(%):  Mặc định = 0 - KHÔNG CHO PHÉP TS.
+   
+   Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh và **giữ một khoảng cách xác định trước so với giá thị trường**. Khoảng cách được cài đặt ở đây = ``ts_rate(%)``. 
+   
+   Lưu ý: giá thay đổi tối thiểu ``0.1%`` thì bot mới chạy TS.
+
+   Ví dụ: tiếp theo về lệnh BE ở trên: khi lệnh đã có stop-loss dương ở giá 10040, và khi đó giá thị trường tiếp tục tăng lên 11000.
+   Lúc này, theo cơ chế TS thì bot sẽ luôn giữ khoảng cách bảo vệ ở mức 0.4%: 
+   Cách tính: 11000 trừ lại 0.4% giá, tức là bot sẽ cài sl dương ở mức 10956
 
  ``4. Stop-Loss(%):`` Chia làm 02 cơ chế stop-loss
    
@@ -165,11 +177,11 @@ Ví dụ #5: Thay đổi break-event về tỷ lệ: trigger(bẫy) = 1%, bảo 
    /guard be 1 0.5
 
 
-Ví dụ #6: BẬT chế độ Trailing-Stop
+Ví dụ #6: BẬT chế độ Trailing-Stop ở mức 0.4%
  
  .. code-block:: console
 
-   /guard ts 1
+   /guard ts 0.4
    
    
 Ví dụ #7: TẮT chế độ Trailing-Stop
