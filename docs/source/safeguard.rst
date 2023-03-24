@@ -244,6 +244,6 @@ Telegram hoặc sử dụng web.
 **🍀 Chúc mọi người luôn trade có lãi.**
 
 
-* Tính %: `@Percentage Calculator <https://signal.lecuong.info/ts/calc>`_.
+* Tính toán phần trăm(%): `Percentage Calculator <https://signal.lecuong.info/ts/calc>`_.
 
 
