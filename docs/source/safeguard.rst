@@ -242,3 +242,8 @@ Các thông số bảo vệ được lưu trữ trên hệ thống, bạn muốn
 Telegram hoặc sử dụng web.
 
 **🍀 Chúc mọi người luôn trade có lãi.**
+
+
+* Tính %: `@Percentage Calculator <https://signal.lecuong.info/ts/calc>`_.
+
+
