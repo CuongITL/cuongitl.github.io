@@ -21,6 +21,7 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
  ``2. Break-Event(BE):`` khi lệnh dương, bot tự động dời stoploss về entry+% (BE+)
  
    Thông số sử dụng:
+   
    - be_trigger(%): mặc định=0.9
    - be_protect(%): mặc định=0.4
 
@@ -29,6 +30,7 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
    BE+ hiểu nôm na là dời stop-loss dương.
 
    Ví dụ: Bạn vào lệnh BTC ở giá 10000, khi giá tăng lên 10090, tức là lệnh dương 0.9% thì bot sẽ:
+   
    * Hủy stop-loss âm (nếu có)
    * Đặt stop-loss dương ở mức bảo vệ 0.4% ở giá 10040
 
@@ -37,8 +39,8 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
  
    Bot sẽ tự động điều chỉnh stoploss(dương) liên tục để bám sát biến động giá thị trường theo hướng có lợi cho nhà đầu tư giúp gia tăng lợi nhuận tối đa. Vì đây là    bot bảo vệ, nên TS hoạt động theo cơ chế bảo vệ lệnh - chỉ dời stoploss dương - KHÔNG MUA/BÁN LỆNH MỚI.
  
-   TS chỉ hoạt động sau khi lệnh đã có BE+.
-    Thông số sử dụng:
+   TS chỉ hoạt động sau khi lệnh đã có BE+, thông số sử dụng:
+   
    - ts_rate(%):  Mặc định = 0 - KHÔNG CHO PHÉP TS.
    
    Trailing Stop được xem là lệnh cắt lỗ động (dynamic stop loss), nó di chuyển cùng chiều với xu hướng lệnh và **giữ một khoảng cách xác định trước so với giá thị trường**. Khoảng cách được cài đặt ở đây = ``ts_rate(%)``. 
