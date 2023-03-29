@@ -67,7 +67,8 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
    
     Ví dụ: Bạn mua BTC ở giá 20000 thì bot sẽ đặt stop-loss ở mức -35% giá, tức là stop-loss ở giá 13000.
 
-    Hard stop-loss(sl cứng) là mặc định bot đặt, bạn cần để thông số xa hơn sẽ xa hơn sl động 
+    Hard stop-loss(sl cứng) là mặc định bot đặt, bạn cần để thông số này lớn hơn thông số của sl động ở trên.
+    
     Ví dụ bạn muốn sl 25% nhưng giá biến động quá nhanh, nó chưa kích hoạt dc lệnh cắt lỗ ở mức 25% đó thì có sẵn sl cứng đặt ở -35%
 
  ``5. Take-Profit(%):``
