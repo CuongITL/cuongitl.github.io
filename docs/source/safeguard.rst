@@ -53,7 +53,8 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
 
  ``4. Stop-Loss(%):`` Chia làm 02 cơ chế stop-loss
    
-   ``4.1 Hidden stop-loss``: bot sẽ không đặt sẵn sl. Bot sẽ theo dõi và tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh
+   ``4.1 Hidden stop-loss``: bot sẽ không đặt sẵn stop-loss. Bot sẽ theo dõi và tự động cắt lệnh (sl) theo %giá hoặc theo %vốn vào lệnh. Phương pháp
+   này gọi là stop-loss động nhằm tránh chiến lược Stop-Hunt của các cá mập.
    
    - sl_by: percent hoặc margin, mặc định=margin. Thông số này quyết định bot sẽ tính toán sl theo % giá cố định hoặc theo % của vốn lệnh(margin) hiện tại.
    - sl_percent: mức % stop-loss. Mặc định = 0  - KHÔNG SỬ DỤNG STOP-LOSS.
@@ -65,6 +66,9 @@ BOT tự động cài đặt Stop-Loss, cài đặt Take-Profit, dời stop-loss
    ``4.2 Hard stop-loss``: bot sẽ đặt sẵn stop-loss cứng mặc định ở mức -35% giá.
    
     Ví dụ: Bạn mua BTC ở giá 20000 thì bot sẽ đặt stop-loss ở mức -35% giá, tức là stop-loss ở giá 13000.
+
+    Hard stop-loss(sl cứng) là mặc định bot đặt, bạn cần để thông số xa hơn sẽ xa hơn sl động 
+    Ví dụ bạn muốn sl 25% nhưng giá biến động quá nhanh, nó chưa kích hoạt dc lệnh cắt lỗ ở mức 25% đó thì có sẵn sl cứng đặt ở -35%
 
  ``5. Take-Profit(%):``
  
